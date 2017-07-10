@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+	<head>
+		<title>Web Sites Evaluation</title>
+
+		<!-- WEb Eval STYLESHEETS -->
+				<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,600,700,800' rel='stylesheet' type='text/css'/>
+			<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+			<link type="text/css" rel="stylesheet" href="assets/css/webevalstyle.css" />
+
+			<link type="text/css" rel="stylesheet" href="assets/css/byc_responsive.css" />
+
+			        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+		<link type="text/css" rel="stylesheet" href="assets/css/jquery-ui-byc.css" />
+
+<!--		<link type="text/css" rel="stylesheet" href="css/fullcalendar.css" />-->
+
+		<!-- END STYLESHEETS -->
+
+	</head>
+
+	
+					
+				
+
+	<body 	>
+	
+<!-- BEGIN HEADER-->
+<header id="header">
+	
+
+
+<!-- BEGIN NAVBAR -->
+
+<nav class="navbar navbar-default " role="navigation" id="main-navbar" >
+	<!-- Brand and toggle get grouped for better mobile display -->
+
+	<div class="navbar-header">
+<!--
+        <div class="row">
+          <div >
+-->
+		<a class="btn btn-transparent btn-equal btn-menu" href="javascript:void(0);"><i class="fa fa-bars fa-lg"></i></a>
+
+
+			
+			
+        
+<!-- <div > -->
+<!--
+        <div class="input-group">
+      <input type="text" placeholder="Search for...">
+      <span class="input-group-btn">
+      <a href="#" class="btn  btn-equal btn-menu">Search<i class="fa fa-search"></i></a>
+      </span>
+    </div>
+-->
+<!--       </div>-->
+
+         
+ 
+            
+
+        
+
+		<div class="navbar-brand">
+               
+			<a class="main-brand" href="main.html">
+				<h3 class="text-light text-white"><span>Web Sites <strong>Evaluation</strong> </span></h3>
+			</a>
+		</div><!--end .navbar-brand -->
+		
+	</div>
+ <div class="container-fluid" >
+    <ul class="nav navbar-nav navbar-right">
+         
+    
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        
+    </ul>
+    <form class="navbar-form navbar-right">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    </div>
+</nav>
+<!-- END NAVBAR -->
+</header>
+<!-- END HEADER-->
+
+<!-- BEGIN BASE-->
+<div id="base" >
+	
+	<!-- BEGIN SIDEBAR-->
+	<div id="sidebar" >
+		<div class="sidebar-back"></div>
+		<div class="sidebar-content">
+            
+			<div class="nav-brand">
+				<a class="main-brand" href="main.html">
+                    <img src="./assets/images/download.png" width="100%" height="50px">
+<!--					<h3 class="text-light text-white"><span>Web Sites Eavaluation <strong>Catch Up</strong></span></h3>-->
+				</a>
+			</div>
+			
+
+<!-- BEGIN MAIN MENU -->
+<ul class="main-menu" >
+	<!-- Menu Dashboard -->
+	<li>
+		<a href="/#/home" class="active" >
+			<i class="fa fa-home fa-fw"></i><span class="title">Home</span>
+		</a>
+	</li><!--end /menu-item -->
+	<!-- Menu UI -->
+	<li>
+		<a href="javascript:void(0);">
+			<i class="fa fa-puzzle-piece fa-fw"></i><span class="title">contact</span> <span class="expand-sign">+</span>
+		</a>
+		<!--start clients -->
+		<ul>
+			<li><a href="/#/contact" >Contact Us</a></li>
+
+			<li><a href="/#/testimonials" >Testimonials</a></li>
+
+		</ul><!--end /clients -->
+	</li><!--end /menu-item -->
+	<!-- Menu Pages -->
+<!--<li>-->
+	<!--	<a href="javascript:void(0);">
+			<i class="fa fa-group fa-fw"></i><span class="title">Instructors</span> <span class="expand-sign">+</span>
+		</a>-->
+		<!--start instructors -->
+	<!--	<ul>
+			<li><a href="i_entry.html" >Instructors Entry</a></li>
+
+			<li><a href="i_list.html" >Instructors List</a></li>
+
+		</ul>--><!--end /instructors -->
+<!--	</li>end /menu-item -->
+	<!-- Menu Types -->
+	<li>
+		<a href="types.html">
+			<i class="fa fa-th fa-fw"></i><span class="title">Suggestions</span>
+		</a>
+	</li><!--end /Types -->
+	<!-- Menu Forms -->
+	<li>
+		<a href="/#/about">
+			<i class="fa fa-list fa-fw"></i><span class="title">About Us</span>
+		</a>
+	</li><!--end /menu-item -->
+	<!-- Menu Prices -->
+/
+	
+</ul><!--end .main-menu -->
+<!-- END MAIN MENU -->
+		</div>
+	</div><!--end #sidebar-->
+	<!-- END SIDEBAR -->
+	
+	<!-- BEGIN CONTENT-->
+	<div id="content">
+        
+		<section>
+ 
+		<ol class="breadcrumb">
+									<li class="text-bold">User</li>
+												<li class="active">Logged In User</li>
+						</ol>
+
+	<div class="section-header">
+<!--		<h3 class="text-standard"><i class="fa fa-fw fa-arrow-circle-right text-gray-light"></i> Calendar</h3>-->
+	</div>
+	<div class="section-body">
+
+
+    <ng-view></ng-view>
+<!--
+</div>
+        
+-->
+	</div><!--end .section-body -->
+          
+</section>
+	</div><!--end #content-->		
+	<!-- END CONTENT -->
+	
+</div><!--end #base-->	
+<!-- END BASE -->
+
+	<!-- BEGIN JAVASCRIPT -->
+		
+<script src="./assets/js/jquery-1.11.0.min.js"></script>
+<script src="./assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="./assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="./assets/js/BootstrapFixed.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="https://code.angularjs.org/1.5.6/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.5.6/angular-route.js"></script>
+<script src="./assets/js/spin.min.js"></script>
+<script src="./assets/js/jquery.slimscroll.min.js"></script>
+<script src="./assets/js/myapp.js"></script>
+ <script src="./app/app.js"></script>       
+        <script src="./app/components/testimonials/testimonialsCtrl.js"></script>
+<!--<script src="js/Demo.js"></script>-->
+
+	
+	<!-- END JAVASCRIPT -->s
+	
+	</body>
+</html>
