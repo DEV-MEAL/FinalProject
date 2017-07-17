@@ -6,7 +6,7 @@ var CommentSchema = new Schema({
         type: String,
         required: true
     },
-    webSiteId: {
+    websiteId: {
         type: Schema.Types.ObjectId,
         required: true,
         ref: "websites"

@@ -1,7 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var config = require("./config");  
-
+var expressJwt = require("express-jwt");
 var busboy = require('connect-busboy')
 
 var fs = require('fs-extra');
@@ -21,9 +21,11 @@ app.use(busboy());
 app.use(express.static(path.join(__dirname, "public")));
 
 // Routes \\
-
+app.use("/auth", require("./routes/authRoutes"));
 app.use("/api/websites", require("./routes/WebSiteRoutes"));
-
+app.use("/api/comment", require("./routes/commentRoutes"));
+app.use("/api/auth", expressJwt({secret:config.secret}));
+app.use("/api/auth/comment", require("./routes/commentAuthRoutes"))
 
 mongoose.connect(config.database, function() {
     console.log("Database is connected");
