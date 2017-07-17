@@ -1,4 +1,4 @@
-angular.module("myApp", ["ngRoute"])
+angular.module("myApp", ["ngRoute", "myApp.Auth"])
 
 
 .config( function($routeProvider) {
@@ -10,7 +10,7 @@ angular.module("myApp", ["ngRoute"])
                
   })
         .when("/about", {
-            templateUrl: "app/components/aboutUS/about.html",
+            templateUrl: "app/components/aboutUs/about.html",
 //            controller: "AboutController"
         })
            .when("/contact", {
@@ -32,6 +32,18 @@ angular.module("myApp", ["ngRoute"])
                 .when("/manageWebSites", {
             templateUrl: "app/components/settings/manageWebSites/manageWebSites.html",
            controller: "manageController"
+        })
+        .when("/signup", {
+            templateUrl: "app/components/signup/signup.html",
+            controller: "SignupController"
+        })
+        .when("/login", {
+            templateUrl: "app/components/login/login.html",
+            controller: "LoginController"
+        })
+        .when("/logout", {
+            controller: "LogoutController",
+            template: ""
         })
         .otherwise({
             redirectTo: "/home"
