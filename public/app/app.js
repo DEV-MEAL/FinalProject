@@ -5,8 +5,9 @@ angular.module("myApp", ["ngRoute"])
 
            $routeProvider
                .when('/home', {
-//    controller: 'homeController',
+   controller: 'homeController',
     templateUrl: './app/components/home/home.html'
+               
   })
         .when("/about", {
             templateUrl: "app/components/aboutUS/about.html",
@@ -20,9 +21,17 @@ angular.module("myApp", ["ngRoute"])
             templateUrl: "./app/components/testimonials/testimonials.html",
          controller: "TestimonialsController"
         })
-           .when("/booking", {
-            templateUrl: "app/components/book/BookingNew.html",
-            controller: "BookingController"
+           .when("/suggestions", {
+            templateUrl: "app/components/suggestions/suggestions.html",
+            //controller: "suggestionsController"
+        })
+              .when("/webview/:id", {
+            templateUrl: "app/components/WebView/webview.html",
+            controller: "webViewController"
+        })
+                .when("/manageWebSites", {
+            templateUrl: "app/components/settings/manageWebSites/manageWebSites.html",
+           controller: "manageController"
         })
         .otherwise({
             redirectTo: "/home"

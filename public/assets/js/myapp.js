@@ -1,3 +1,8 @@
+         
+     
+
+
+
 $(window).resize(function () { 
 
     $('section').css('padding-top', parseInt($('#main-navbar').css("height"))-50);

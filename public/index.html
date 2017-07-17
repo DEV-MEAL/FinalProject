@@ -11,11 +11,13 @@
 			<link type="text/css" rel="stylesheet" href="assets/css/webevalstyle.css" />
 
 			<link type="text/css" rel="stylesheet" href="assets/css/byc_responsive.css" />
-
+<link type="text/css" rel="stylesheet" href="assets/css/rating.css" />
 			        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link type="text/css" rel="stylesheet" href="assets/css/TableTools.css" />
 	
-		<link type="text/css" rel="stylesheet" href="assets/css/jquery-ui-byc.css" />
+<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.8.2/css/jquery.dataTables.css">
+<!--		<link type="text/css" rel="stylesheet" href="assets/css/jquery-ui-byc.css" />-->
+        
 
 <!--		<link type="text/css" rel="stylesheet" href="css/fullcalendar.css" />-->
 
@@ -79,7 +81,7 @@
     <ul class="nav navbar-nav navbar-right">
          
     
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/#/"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         
     </ul>
@@ -151,10 +153,11 @@
 <!--	</li>end /menu-item -->
 	<!-- Menu Types -->
 	<li>
-		<a href="types.html">
+		<a href="/#/suggestions">
 			<i class="fa fa-th fa-fw"></i><span class="title">Suggestions</span>
 		</a>
-	</li><!--end /Types -->
+	</li>
+    <!--end /Types -->
 	<!-- Menu Forms -->
 	<li>
 		<a href="/#/about">
@@ -162,7 +165,21 @@
 		</a>
 	</li><!--end /menu-item -->
 	<!-- Menu Prices -->
-/
+	<li>
+		<a href="javascript:void(0);">
+			<i class="fa fa-cog fa-fw"></i><span class="title">Settings</span> <span class="expand-sign">+</span>
+		</a>
+		<!--start clients -->
+		<ul>
+             <li><a href="/#/manageWebSites" >Add Web Sites</a></li>
+<!--<li><a href="/#/" >Categories</a></li>-->
+
+			<li><a href="/#/" >Users</a></li>
+            <li><a href="/#/" >Suggestions</a></li>
+            
+
+		</ul><!--end /clients -->
+	</li>
 	
 </ul><!--end .main-menu -->
 <!-- END MAIN MENU -->
@@ -203,17 +220,26 @@
 	<!-- BEGIN JAVASCRIPT -->
 		
 <script src="./assets/js/jquery-1.11.0.min.js"></script>
+<!--
 <script src="./assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script src="./assets/js/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="./assets/js/BootstrapFixed.js"></script>
+-->
+        <script src="./assets/js/BootstrapFixed.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <script src="https://code.angularjs.org/1.5.6/angular.min.js"></script>
         <script src="https://code.angularjs.org/1.5.6/angular-route.js"></script>
+      
+<!--
 <script src="./assets/js/spin.min.js"></script>
 <script src="./assets/js/jquery.slimscroll.min.js"></script>
+-->
 <script src="./assets/js/myapp.js"></script>
  <script src="./app/app.js"></script>       
         <script src="./app/components/testimonials/testimonialsCtrl.js"></script>
+                <script src="./app/components/WebView/webViewCtrl.js"></script>
+         <script src="./app/components/settings/manageWebSites/manageCtrl.js"></script>
+           <script src="./app/components/home/homeCtrl.js"></script>
+          <script type="text/javascript" charset="utf8" src="./assets/js/TableTools.js"></script>
 <!--<script src="js/Demo.js"></script>-->
 
 	
