@@ -6,13 +6,15 @@ var CommentSchema = new Schema({
         type: String,
         required: true
     },
-    webSiteName: {
-        type: String,
-        required: true
+    webSiteId: {
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: "websites"
     },
        userId: {
-        type: String,
-        required: true
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: "User"   
     }
        
 });
