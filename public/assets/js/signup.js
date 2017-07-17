@@ -4,6 +4,7 @@ app.controller("SignupController", ["$scope", "$location", "UserService", functi
     $scope.passwordMessage = "";
     
     $scope.signup = function (user) {
+        console.log("hi we're in signup");
         if ($scope.user.password !== $scope.passwordConfirm) {
             $scope.passwordMessage = "Passwords do not match.";
         } else {

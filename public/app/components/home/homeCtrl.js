@@ -7,7 +7,6 @@ dialogApp.controller("homeController",function($scope, $http, $timeout, $locatio
    
         $scope.getWebSites = function () {
   
-      
         $http.get("http://localhost:8000/api/websites").then(function (response) {
             $scope.websites = response.data;
        
